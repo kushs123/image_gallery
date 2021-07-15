@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +37,63 @@
     transform: rotate(360deg);
   }
 }
+
+
+.main{
+  display: flex;
+  width:100%;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  margin:10px;
+  width: 30%;
+  border: 1px solid black;
+  height:300px;
+}
+
+.container{
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: none;
+}
+
+.form>input{
+  width:60%;
+}
+
+.image-grid{
+  height: 45vh;
+  flex-grow: 1;
+  margin: 8px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction:column;
+  border-radius:5px;
+}
+
+.image-grid>img{
+  max-height: 70%;
+  min-width: 70%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+.delete{
+  text-align: right;
+  padding-right:10px;
+  padding-bottom: 2px;
+  color: red;
+  cursor: pointer;
+}
+.image-grid>h4{
+  margin:4px;
+}
+.image-grid>h5{
+  margin:4px;
+  color:grey;
+}
+
